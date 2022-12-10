@@ -1,8 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 
 import HeaderView from './HeaderView';
-import { removeFromLocalStorage } from 'src/chore/helpers';
-import { CASHED_USER } from 'src/chore/constants';
+import { removeFromLocalStorage } from '../../chore/helpers';
+import { CASHED_USER } from '../../chore/constants';
 
 import type { FC } from 'react';
 import type { HeaderControllerProps } from './HeaderTypes';
