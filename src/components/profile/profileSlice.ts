@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { readFromLocalStorage } from 'src/chore/helpers';
-import { CASHED_USER } from 'src/chore/constants';
+import { readFromLocalStorage } from '../../chore/helpers';
+import { CASHED_USER } from '../../chore/constants';
 import { getProfile } from './action';
 
 const initialState = {

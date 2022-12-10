@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 
-import { APP_NAME, HEADER_HEIGHT, OPEN_DRAWER_WIDTH, CLOSE_DRAWER_WIDTH } from 'src/chore/constants';
+import { APP_NAME, HEADER_HEIGHT, OPEN_DRAWER_WIDTH, CLOSE_DRAWER_WIDTH } from '../../chore/constants';
 import { useStyles } from './AppLayoutStyles';
 import { Drawer } from '../drawer';
 import { Header } from '../header';

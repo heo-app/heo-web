@@ -4,8 +4,8 @@ import { useTranslation } from 'react-i18next';
 
 import LoginView from './LoginView';
 import { getProfile as getProfileAction } from '../profile/action';
-import { writeToLocalStorage } from 'src/chore/helpers';
-import { APP_LANGUAGE } from 'src/chore/constants';
+import { writeToLocalStorage } from '../../chore/helpers';
+import { APP_LANGUAGE } from '../../chore/constants';
 
 import type { MouseEvent, ReactElement } from 'react';
 

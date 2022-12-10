@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { AppLayout } from '../components/appLayout';
 import { LoginPage } from '../components/login';
 import { DashboardPage } from '../components/dashboard';
-import { Profile } from 'src/components/profile';
+import { Profile } from '../components/profile';
 
 export const customRoutes = (
   <Routes>
