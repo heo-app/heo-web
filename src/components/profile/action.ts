@@ -10,20 +10,16 @@ interface GetProfileProps {
 
 export const getProfile = createAsyncThunk('profile/getProfile', async (props: GetProfileProps) => {
   const { successCallback } = props;
-  axios
-    .get('http://localhost:4000/getUser')
-    .then((response) => {
-      const user = response.data ?? null;
+  const response = await axios.get('http://localhost:4000/getUser').catch(() => {
+    return null;
+  });
 
-      if (user) {
-        writeToLocalStorage(CASHED_USER, user);
-        successCallback?.();
-      }
+  const user = response?.data ?? null;
 
-      return user;
-    })
-    .catch((error) => {
-      console.error('error: ', error);
-      return null;
-    });
+  if (user) {
+    writeToLocalStorage(CASHED_USER, user);
+    successCallback?.();
+  }
+
+  return user;
 });
