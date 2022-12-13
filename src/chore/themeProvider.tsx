@@ -6,6 +6,7 @@ export const customTheme = createTheme({
       main: '#1976d2',
       contrastText: 'white',
       light: '#fff',
+      dark: '#242424',
     },
     secondary: {
       main: '#ec6602',

@@ -16,13 +16,13 @@ const LoginView: FC<LoginViewProps> = (props) => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className={classes.container}>
       <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 h-screen">
         <div style={{ background: theme.palette.secondary.main }}>
           <div className="flex flex-col items-center xl:justify-center font-Dyna h-full pt-10">
             <img src={logo} alt="" height={300} width={400} />
             <h1 className={`text-4xl pt-5 ${classes.appNameText}`}>{t('login.welcomeMessage')}</h1>
-            <h1 className="text-3xl">{t('login.appSlogan')}</h1>
+            <h1 className="text-3xl mt-1 mb-md-0 mb-4">{t('login.appSlogan')}</h1>
           </div>
         </div>
 
@@ -45,27 +45,33 @@ const LoginView: FC<LoginViewProps> = (props) => {
           <form className="flex flex-col mx-6 gap-y-2">
             <label className="text-sm">{t('login.username')}</label>
             <input
-              className="bg-white shadow-sm shadow-gray-400 text-xs p2"
+              className="bg-white shadow-sm shadow-gray-400 text-xs p-2 rounded-md"
               placeholder={t('login.enterUsername') as string}
             ></input>
-            <label className="text-sm">{t('login.password')}</label>
+
+            <label className="text-sm mt-3">{t('login.password')}</label>
             <input
-              className="bg-white shadow-sm shadow-gray-400 text-xs p2"
+              className="bg-white shadow-sm shadow-gray-400 text-xs p-2 rounded-md"
               placeholder={t('login.enterPassword') as string}
             ></input>
 
-            <h1 className="flex justify-end text-xs text-blue-300">{t('login.forgetPassword')}</h1>
+            <h1 className="flex justify-end text-xs text-blue-300 cursor-pointer mt-5 mb-1">
+              {t('login.forgetPassword')}
+            </h1>
           </form>
 
           <div className="pt-2 mx-6">
-            <button className="bg-blue-200 text-black w-full p-3 rounded-sm" onClick={onLoginButtonClick}>
+            <button
+              className="bg-blue-200 text-black w-full p-3 rounded-md cursor-pointer"
+              onClick={onLoginButtonClick}
+            >
               {t('login.startNow')}
             </button>
           </div>
 
           <div className="h-32 mt-6 flex items-center justify-center">
             <a>
-              <div className="bg-blue-700 text-white shadow-sm shadow-gray-400 px-5 py-2 mb-4 flex flex-row items-center justify-between full">
+              <div className="bg-blue-700 text-white shadow-sm shadow-gray-400 px-5 py-2 mb-4 flex flex-row items-center justify-between full rounded-xl cursor-pointer">
                 {t('login.signInWithGoogle')}
                 <GoogleIcon className="text-red-500	ml-3" />
               </div>
