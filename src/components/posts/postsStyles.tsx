@@ -2,7 +2,7 @@ import makeStyles from '@mui/styles/makeStyles';
 
 import type { Theme } from '@mui/material';
 
-export const useStyles = makeStyles<Theme>(() => ({
+export const useStyles = makeStyles<Theme>((Theme) => ({
   container: {
     display: 'flex',
     flex: 1,
@@ -10,6 +10,6 @@ export const useStyles = makeStyles<Theme>(() => ({
     height: '100%',
     flexDirection: 'column',
     padding: 10,
-    background: '#202124',
+    backgroundColor: Theme.palette.primary.dark,
   },
 }));
