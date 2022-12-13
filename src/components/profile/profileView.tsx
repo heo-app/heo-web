@@ -53,7 +53,7 @@ const ProfileView: FC<ProfileViewProps> = () => {
     <div className={classes.container}>
       <div className={classes.contentContainer}>
         <div className={classes.header}>
-          <div>
+          <div style={{ display: 'flex' }}>
             <StyledBadge
               overlap="circular"
               anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}

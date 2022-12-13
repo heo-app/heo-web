@@ -9,7 +9,7 @@ export const useStyles = makeStyles<Theme>(() => ({
     display: 'flex',
     flex: 1,
     width: '100%',
-    height: '100%',
+    height: '100vh',
     flexDirection: 'column',
     padding: 10,
     alignItems: 'center',
@@ -64,7 +64,8 @@ export const useStyles = makeStyles<Theme>(() => ({
     flexDirection: 'row',
   },
   textFields: {
-    background: '#e3d4ac',
+    background: 'white',
     width: '100%',
+    borderRadius: 5,
   },
 }));
