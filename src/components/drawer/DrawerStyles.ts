@@ -11,7 +11,7 @@ export const useStyles = makeStyles<Theme, DrawerStylesProps>((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     background: theme.palette.primary.dark,
-    boxShadow: '1px 4px 12px 1px orange',
+    boxShadow: '0.5px 0px 4px 0.5px orange',
     zIndex: 1,
     color: 'white',
     transition: 'width 0.5s',
@@ -23,7 +23,8 @@ export const useStyles = makeStyles<Theme, DrawerStylesProps>((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     background: theme.palette.primary.dark,
-    boxShadow: '1px 4px 12px 1px orange',
+    boxShadow: '0.5px 0px 4px 0.5px orange',
+
     zIndex: 1,
     color: 'white',
     transition: 'width 0.5s',

@@ -16,7 +16,7 @@ const PostView: FC<PostViewProps> = (props) => {
 
   return (
     <div className={`${classes.container} ${type === 'proffer' ? classes.profferCard : classes.demandCard}`}>
-      <div className={classes.containerText}>
+      <div className={type === 'proffer' ? classes.profferTextContainer : classes.demandTextContainer}>
         <h4 className={classes.textStyle}>{type}</h4>
       </div>
       <h5 className={classes.titleStyle}>{title}</h5>
@@ -26,9 +26,12 @@ const PostView: FC<PostViewProps> = (props) => {
           width={600}
           height={300}
           images={images}
-          showBullets={true}
-          showNavs={true}
-          style={{ alignSelf: 'center', marginTop: 10 }}
+          showBullets={images.length > 1}
+          showNavs={images.length > 1}
+          style={{
+            alignSelf: 'center',
+            marginTop: 10,
+          }}
           autoPlay
         />
       )}
