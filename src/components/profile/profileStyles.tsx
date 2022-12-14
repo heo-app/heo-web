@@ -4,7 +4,7 @@ import headerImage from '../../images/header-image.jpeg';
 
 import type { Theme } from '@mui/material';
 
-export const useStyles = makeStyles<Theme>(() => ({
+export const useStyles = makeStyles<Theme>((theme) => ({
   container: {
     display: 'flex',
     flex: 1,
@@ -64,8 +64,13 @@ export const useStyles = makeStyles<Theme>(() => ({
     flexDirection: 'row',
   },
   textFields: {
-    background: 'white',
     width: '100%',
     borderRadius: 5,
+  },
+  textSecondary: {
+    color: `${theme.palette.secondary.main} !important`,
+  },
+  textWhite: {
+    color: 'white !important',
   },
 }));

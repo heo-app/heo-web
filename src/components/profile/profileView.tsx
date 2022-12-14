@@ -83,7 +83,11 @@ const ProfileView: FC<ProfileViewProps> = () => {
                   className={classes.textFields}
                   id="outlined-basic"
                   label={t('profile.firstName')}
-                  variant="outlined"
+                  variant="standard"
+                  size="small"
+                  color="secondary"
+                  InputLabelProps={{ className: classes.textSecondary }}
+                  inputProps={{ className: classes.textWhite }}
                 />
               </Grid>
               <Grid item xs={6}>
@@ -91,7 +95,11 @@ const ProfileView: FC<ProfileViewProps> = () => {
                   className={classes.textFields}
                   id="outlined-basic"
                   label={t('profile.lastName')}
-                  variant="outlined"
+                  variant="standard"
+                  size="small"
+                  color="secondary"
+                  InputLabelProps={{ className: classes.textSecondary }}
+                  inputProps={{ className: classes.textWhite }}
                 />
               </Grid>
               <Grid item xs={6}>
@@ -99,7 +107,11 @@ const ProfileView: FC<ProfileViewProps> = () => {
                   className={classes.textFields}
                   id="outlined-basic"
                   label={t('profile.mobile')}
-                  variant="outlined"
+                  variant="standard"
+                  size="small"
+                  color="secondary"
+                  InputLabelProps={{ className: classes.textSecondary }}
+                  inputProps={{ className: classes.textWhite }}
                 />
               </Grid>
               <Grid item xs={6}>
@@ -107,7 +119,11 @@ const ProfileView: FC<ProfileViewProps> = () => {
                   className={classes.textFields}
                   id="outlined-basic"
                   label={t('profile.email')}
-                  variant="outlined"
+                  variant="standard"
+                  size="small"
+                  color="secondary"
+                  InputLabelProps={{ className: classes.textSecondary }}
+                  inputProps={{ className: classes.textWhite }}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -115,7 +131,11 @@ const ProfileView: FC<ProfileViewProps> = () => {
                   className={classes.textFields}
                   id="outlined-basic"
                   label={t('profile.bio')}
-                  variant="outlined"
+                  variant="standard"
+                  size="small"
+                  color="secondary"
+                  InputLabelProps={{ className: classes.textSecondary }}
+                  inputProps={{ className: classes.textWhite }}
                 />
               </Grid>
             </Grid>
